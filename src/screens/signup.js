@@ -1,6 +1,6 @@
-import { View, Text, TextInput, Touchable, Pressable } from 'react-native'
-import React from 'react'
-import { useState } from 'react';
+import { View, Text, TextInput, Touchable, Pressable } from "react-native";
+import React from "react";
+import { useState } from "react";
 
 import { Ionicons } from "@expo/vector-icons";
 export default function () {
@@ -11,22 +11,38 @@ export default function () {
 
   const onMalePressed = () => {
     setGender("Male");
-  };r
+  };
+
   return (
-    <View className={"flex flex-1"}>  
-    {/* logo area */}
-    <View className = {"flex flex-1 bg-purple-500"}></View>
-    {/* form Rea */}
-    <View className = {"flex flex-auto px-5"}>
-     <TextInput placeholder="First Name" className={"border-b-2 border-b-pink-300 rounded-md my-4 p-2"}/>
-     <TextInput placeholder="Last Name" className={"border-b-2 border-b-pink-300 rounded-md my-4 p-2"}/>
-     <TextInput placeholder="Email" className={"border-b-2 border-b-pink-300 rounded-md my-4 p-2"}/>
-     <TextInput placeholder="Password" className={"border-b-2 border-b-pink-300 rounded-md my-4 p-2"}/>
-     <TextInput placeholder="Conform Password" className={"border-b-2 border-b-pink-300 rounded-md my-4 p-2"}/>
-      </View> 
+    <View className={"flex flex-1"}>
+      {/* logo area */}
+      <View className={"flex flex-1 bg-purple-500"}></View>
+      {/* form Rea */}
+      <View className={"flex flex-auto px-5"}>
+        <TextInput
+          placeholder="First Name"
+          className={"border-b-2 border-b-pink-300 rounded-md my-4 p-2"}
+        />
+        <TextInput
+          placeholder="Last Name"
+          className={"border-b-2 border-b-pink-300 rounded-md my-4 p-2"}
+        />
+        <TextInput
+          placeholder="Email"
+          className={"border-b-2 border-b-pink-300 rounded-md my-4 p-2"}
+        />
+        <TextInput
+          placeholder="Password"
+          className={"border-b-2 border-b-pink-300 rounded-md my-4 p-2"}
+        />
+        <TextInput
+          placeholder="Conform Password"
+          className={"border-b-2 border-b-pink-300 rounded-md my-4 p-2"}
+        />
+      </View>
       <View>
-       <Pressable>
-        <Text>Date of Birth</Text>
+        <Pressable>
+          <Text>Date of Birth</Text>
         </Pressable>
         <View className={"flex flex-row justify-between p-4"}>
           <Text>Gender: </Text>
@@ -57,10 +73,9 @@ export default function () {
             <Text>Female</Text>
           </TouchableOpacity>
         </View>
-
       </View>
-     {/* footer area */}
-     <View className = {"flex flex-1 bg-pink-500"}></View>
+      {/* footer area */}
+      <View className={"flex flex-1 bg-pink-500"}></View>
     </View>
-  )
+  );
 }
